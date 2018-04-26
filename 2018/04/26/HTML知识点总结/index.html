@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="HTML,总结," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="1.HTML的头部含义(body标签以上的所有标签算是头部)  往往我们在写HTML代码时都会用到快捷键!+tab自动生成html的骨架，如下：  1234567891011&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;  &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;  &amp;lt;me">
+<meta name="keywords" content="HTML,总结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML知识点总结">
+<meta property="og:url" content="http://yoursite.com/2018/04/26/HTML知识点总结/index.html">
+<meta property="og:site_name" content="阿迪弟弟">
+<meta property="og:description" content="1.HTML的头部含义(body标签以上的所有标签算是头部)  往往我们在写HTML代码时都会用到快捷键!+tab自动生成html的骨架，如下：  1234567891011&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;  &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;  &amp;lt;me">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-04-26T09:17:29.094Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML知识点总结">
+<meta name="twitter:description" content="1.HTML的头部含义(body标签以上的所有标签算是头部)  往往我们在写HTML代码时都会用到快捷键!+tab自动生成html的骨架，如下：  1234567891011&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;  &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;  &amp;lt;me">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/04/26/HTML知识点总结/"/>
+
+
+
+
+
+  <title>HTML知识点总结 | 阿迪弟弟</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+	<a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">阿迪弟弟</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于我
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/26/HTML知识点总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Andy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿迪弟弟">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">HTML知识点总结</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-26T16:51:46+08:00">
+                2018-04-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="1-HTML的头部含义-body标签以上的所有标签算是头部"><a href="#1-HTML的头部含义-body标签以上的所有标签算是头部" class="headerlink" title="1.HTML的头部含义(body标签以上的所有标签算是头部)"></a>1.HTML的头部含义(body标签以上的所有标签算是头部)</h1><p>  往往我们在写HTML代码时都会用到快捷键<code>!+tab</code>自动生成html的骨架，如下：<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">  &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span><br><span class="line">  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;</span><br><span class="line">  &lt;title&gt;Document&lt;/title&gt;</span><br><span class="line"> &lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
+<p>&emsp;在之前下面这一部分代码的含义我并不是了解的太充分，一般只是拿来直接用，作为初学者，我相信大家都会对这些在我们初级学习阶段多少有些重要的地方造成忽视。但是作为一名合格的程序员来说，追求细节和卓越，成功才会追上自己。因此我觉得了解和掌握每一个细节都是很有必要的。下面我将逐一进行简单的概括，可能有些地方理解有误，望大家批评指出<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">  &lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span><br><span class="line">    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;</span><br><span class="line">    &lt;title&gt;Document&lt;/title&gt;</span><br><span class="line">   &lt;/head&gt;</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><code>&lt;!DOCTYPE html&gt;</code>这句话的意思是告诉浏览器，我们编写的HTML是哪个版本，这句话必须要放在HTML文档的第一行。在HTML5之前，Doctype的文档都十分冗长。我们现在书写HTML一般写<code>&lt;!DOCTYPE html&gt;</code>这段话就可以了，简单暴力。</li>
+<li><p><code>&lt;html lang=&quot;en&quot;&gt;</code>第二行<strong>lang</strong>属性用于标记网页或部分网页的语言,所以它不仅仅能用在第二行的这个html标签上，还可以用在其他所有的标签上。如<code>&lt;p&gt;This is my HTML &lt;span lang=&quot;zh-Hans&quot;&gt;总结&lt;/span&gt;&lt;/p&gt;</code>其实简单来说它对我们程序员来说并没有什么太大的作用，大可不必纠结于此<br>它的作用是什么呢？</p>
+<blockquote>
+<ul>
+<li>我们可以根据lang属性来设置不同lang属性的css样式，比如我们可以给所有lang为中文的一个样式，给lang为英文的另一个样式。</li>
+<li>告诉搜索引擎做精确的识别</li>
+<li>让语法检测程序或翻译工具做识别</li>
+<li>帮助网页阅读程序做识别<br>…</li>
+</ul>
+</blockquote>
+</li>
+<li><p><code>&lt;head&gt;&lt;/head&gt;</code>:标签内为一组<a href="http://www.ruanyifeng.com/blog/2007/03/metadata.html" target="_blank" rel="noopener">元数据</a>(何为元数据这里解释的很清楚)所以从以下代码中,head标签下的这组元数据的意义我们分别来看：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span><br><span class="line">&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;</span><br><span class="line">&lt;title&gt;Document&lt;/title&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><code>charset</code>:这个不用多讲，UTF-8,最开始学习前端的时候，对meta标签了解只有这一句，它广泛应用于网页的编码，它其实是一种Unicode编码，即致力于把全球所有语言纳入一个统一的编码。下面主要讲meta标签</p>
+<h2 id="1-1-meta标签"><a href="#1-1-meta标签" class="headerlink" title="1.1 meta标签"></a>1.1 meta标签</h2><p><strong>下面我想要介绍以下meta标签</strong>因为该标签我在最初理解的时候感觉比较混乱，查了些文档也有些迷糊，所以想整理如下:</p>
+<h4 id="实际上meta标签只有两个属性-分别是http-equiv和name两个属性。"><a href="#实际上meta标签只有两个属性-分别是http-equiv和name两个属性。" class="headerlink" title="实际上meta标签只有两个属性,分别是http-equiv和name两个属性。"></a>实际上meta标签只有两个属性,分别是http-equiv和name两个属性。</h4><h3 id="1-1-1-name属性"><a href="#1-1-1-name属性" class="headerlink" title="1.1.1 name属性"></a>1.1.1 name属性</h3><blockquote>
+<p>其中在name中,我们可以这样理解<code>&lt;meta name=&quot;属性参数&quot; content=&quot;具体描述&quot;&gt;</code>其中name有如下参数：</p>
+</blockquote>
+<blockquote>
+<p><em>keywords(关键字)</em>: 用来告诉搜索引擎你的关键字是什么，关键字的内容即为上面说的content(具体描述)，举个例子: <code>&lt;meta name=&quot;keywords&quot; content=&quot;HTML,meta,keywords&quot;&gt;</code>   </p>
+</blockquote>
+<blockquote>
+<p><em>description(网站内容的描述)</em>: 用于告诉引擎，你网站的主要内容，和上面的没什么区别。举个例子：<code>&lt;mate name=&quot;description&quot; content=&quot;只是一个HTML的总结&quot;&gt;</code></p>
+</blockquote>
+<blockquote>
+<p><em><a href="https://blog.csdn.net/qq_16339527/article/details/52996316" target="_blank" rel="noopener">viewport(移动端窗口)</a></em>:这一段比较复杂，涉及到手机端的样式，如果想详细了解可以网上查询，<code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</code>这段的意思是指在移动端下宽度为设备的宽度，无缩放。</p>
+</blockquote>
+<blockquote>
+<ul>
+<li>其他属性:如对爬虫，制作软件，版权的信息说明等…</li>
+</ul>
+</blockquote>
+<h3 id="1-1-2-http-equiv属性"><a href="#1-1-2-http-equiv属性" class="headerlink" title="1.1.2 http-equiv属性"></a>1.1.2 http-equiv属性</h3><p>&emsp;http-equiv属性的作用是能够改变定义了服务器和用户引擎行为的编译。<br>&emsp;同样http-equiv属性的书写格式和name属性格式没什么区别。<code>&lt;meta http-equiv=&quot;属性参数&quot; content=&quot;具体描述&quot;&gt;</code>,其属性参数简单介绍有如下几种：</p>
+<blockquote>
+<ul>
+<li><em>X-UA-Compatible</em>：浏览器的渲染方式。如<code>&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;</code>则是指ie的edge浏览器版本进行渲染</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><em>refresh</em>：这个属性指定，如果content为一个整数，那么它指定几秒钟后重新刷新页面，如果在该整数后面跟着字符串链接，那么则在数秒后刷新并进入链接地址。</li>
+<li><em>Set-Cookie</em>：如果该网页已经过期了，那么本地的cookies也会被自动删除掉。</li>
+<li>…</li>
+</ul>
+</blockquote>
+<h1 id="2-各标签的含义和简单用法-参考顾老师的Semantic-HTML"><a href="#2-各标签的含义和简单用法-参考顾老师的Semantic-HTML" class="headerlink" title="2.各标签的含义和简单用法(参考顾老师的Semantic HTML)"></a>2.各标签的含义和简单用法(<a href="https://justineo.github.io/slideshows/semantic-html/#/" target="_blank" rel="noopener">参考顾老师的Semantic HTML</a>)</h1><h2 id="2-1区块-section"><a href="#2-1区块-section" class="headerlink" title="2.1区块(section)"></a>2.1区块(section)</h2><h3 id="2-1-1-article元素"><a href="#2-1-1-article元素" class="headerlink" title="2.1.1 article元素"></a>2.1.1 article元素</h3><p>适用于<strong>独立的</strong>页面、文档或者外部引用等内容,article元素通常有它自己的标题，即里面嵌入一个header元素。举个例子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;article&gt;</span><br><span class="line">        &lt;header&gt;</span><br><span class="line">            &lt;h1&gt;HTML总结&lt;/h1&gt;</span><br><span class="line">            &lt;p&gt;时间:XXXXXX&lt;/p&gt;</span><br><span class="line">        &lt;/header&gt;</span><br><span class="line">        &lt;p&gt;</span><br><span class="line">            正文内容</span><br><span class="line">            ......</span><br><span class="line">        &lt;/p&gt;</span><br><span class="line">        &lt;footer&gt;</span><br><span class="line">            &lt;p&gt;Copyright @ xxxxxx All Rights Reserverd&lt;/p&gt;</span><br><span class="line">        &lt;/footer&gt;</span><br><span class="line">    &lt;/article&gt;</span><br></pre></td></tr></table></figure></p>
+<p>所以我们能够看出article有单独发布，重用的特性，通过这个独立的结构，我们可以用article作为：</p>
+<ul>
+<li>一篇帖子</li>
+<li>一篇文章</li>
+<li>一篇用户评论</li>
+<li>…</li>
+</ul>
+<h3 id="2-1-2-section元素"><a href="#2-1-2-section元素" class="headerlink" title="2.1.2 section元素"></a>2.1.2 section元素</h3><p>&emsp;section元素是对文章的内容进行分块，用一个简单的评判标准：当你希望这个元素的内容体现在文档的提纲 (outline) 中时，用 section 是合适的。怎么理解呢？就是比如我们有一篇文章叫<strong>将大象装到冰箱里需要几步？</strong>目录：第一步，第二步，第三步。那么这每一步的描述就是文档的提纲，都可以用section写<br>&emsp;<strong>注意</strong>：section元素是对内容进行分段，它和有着完整独立内容的article元素有区别，不要混淆，举个例子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;article&gt;</span><br><span class="line">      &lt;h1&gt;article元素与section元素的使用方法&lt;/h1&gt;</span><br><span class="line">      &lt;p&gt;何时使用article元素？何时使用section元素…..&lt;/p&gt;</span><br><span class="line">      &lt;section&gt;</span><br><span class="line">            &lt;h2&gt;article元素使用方法&lt;/h2&gt;</span><br><span class="line">            &lt;p&gt;article元素代表文档、页面或应用程序中独立的、完整的、可以独自被外部引用的内容。&lt;/p&gt;</span><br><span class="line">      &lt;/section&gt;</span><br><span class="line">      &lt;section&gt;</span><br><span class="line">            &lt;h2&gt;section元素使用方法&lt;/h2&gt;</span><br><span class="line">            &lt;p&gt; section元素用于对网站或应用程序中页面上的内容进行分块。&lt;/p&gt;</span><br><span class="line">      &lt;/section&gt;</span><br><span class="line">&lt;/article&gt;</span><br></pre></td></tr></table></figure></p>
+<p>最后关于aricle的使用禁忌有三点：</p>
+<blockquote>
+<p>1）不要将section元素用作设置样式的页面容器，那是div元素的工作。<br>2）如果article元素、aside元素或nav元素更符合使用条件，不要使用section元素。<br>3）不要为没有标题的内容区块使用section元素。</p>
+</blockquote>
+<h3 id="2-1-3-nav元素"><a href="#2-1-3-nav元素" class="headerlink" title="2.1.3 nav元素"></a>2.1.3 nav元素</h3><blockquote>
+<p>可以帮助 UA 迅速获得导航内容，例如读屏器可以省去很多渲染直接跳到导航位置。</p>
+</blockquote>
+<p>可用作页面导航之类的，例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;nav&gt;</span><br><span class="line">  &lt;ul&gt;</span><br><span class="line">    &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;&lt;a href=&quot;/news&quot;&gt;News&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;&lt;a&gt;Examples&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">  &lt;/ul&gt;</span><br><span class="line">&lt;/nav&gt;</span><br></pre></td></tr></table></figure></p>
+<h3 id="2-1-4-aside元素"><a href="#2-1-4-aside元素" class="headerlink" title="2.1.4 aside元素"></a>2.1.4 aside元素</h3><p>适用于两个环境：</p>
+<ul>
+<li>与周围内容关联性步怎么密切的内容</li>
+<li>侧边栏内容(或者是被描述对象的相关背景内容)、引述内容。</li>
+</ul>
+<h3 id="2-1-5-header标签"><a href="#2-1-5-header标签" class="headerlink" title="2.1.5 header标签"></a>2.1.5 header标签</h3><ul>
+<li>起描述性或导航型作用的标签：目录、搜索框、logo…</li>
+<li>通常里面包含h1-h6标签</li>
+<li>不影响文档提纲的生成</li>
+</ul>
+<h3 id="2-1-6-footer标签"><a href="#2-1-6-footer标签" class="headerlink" title="2.1.6 footer标签"></a>2.1.6 footer标签</h3><ul>
+<li>代表一个父级区块标签的页脚</li>
+<li>在该标签中可以写作者信息、版权信息和相关文档等</li>
+<li>不影响文档提纲的生成</li>
+</ul>
+<h3 id="2-1-7-address标签"><a href="#2-1-7-address标签" class="headerlink" title="2.1.7 address标签"></a>2.1.7 address标签</h3><blockquote>
+<p>代表与最近父级 article 或整个文档关联的联系人信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;address&gt;</span><br><span class="line">  &lt;a href=&quot;../People/Raggett/&quot;&gt;Dave Raggett&lt;/a&gt;,</span><br><span class="line">  &lt;a href=&quot;../People/Arnaud/&quot;&gt;Arnaud Le Hors&lt;/a&gt;,</span><br><span class="line">  contact persons for the &lt;a href=&quot;Activity&quot;&gt;W3C HTML Activity&lt;/a&gt;</span><br><span class="line">&lt;/address&gt;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<h2 id="2-2分组内容-grouping-content"><a href="#2-2分组内容-grouping-content" class="headerlink" title="2.2分组内容(grouping content)"></a>2.2分组内容(grouping content)</h2><h2 id="2-3文字级语义-text-level-semantics"><a href="#2-3文字级语义-text-level-semantics" class="headerlink" title="2.3文字级语义(text-level semantics)"></a>2.3文字级语义(text-level semantics)</h2><h2 id="2-4表格数据-tabular-data"><a href="#2-4表格数据-tabular-data" class="headerlink" title="2.4表格数据(tabular data)"></a>2.4表格数据(tabular data)</h2><h2 id="2-5更改记录-edits"><a href="#2-5更改记录-edits" class="headerlink" title="2.5更改记录(edits)"></a>2.5更改记录(edits)</h2><h2 id="2-6嵌入内容-embedded-content"><a href="#2-6嵌入内容-embedded-content" class="headerlink" title="2.6嵌入内容(embedded content)"></a>2.6嵌入内容(embedded content)</h2><h1 id="3-如何理解语义化"><a href="#3-如何理解语义化" class="headerlink" title="3 如何理解语义化"></a>3 如何理解语义化</h1><h1 id="4-HTML问题解答"><a href="#4-HTML问题解答" class="headerlink" title="4 HTML问题解答"></a>4 HTML问题解答</h1><h2 id="剩下章节内容我会快速补充，未完待续…"><a href="#剩下章节内容我会快速补充，未完待续…" class="headerlink" title="剩下章节内容我会快速补充，未完待续…"></a>剩下章节内容我会快速补充，未完待续…</h2>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/HTML/" rel="tag"># HTML</a>
+          
+            <a href="/tags/总结/" rel="tag"># 总结</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/25/markdown/" rel="next" title="markdown">
+                <i class="fa fa-chevron-left"></i> markdown
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.png"
+                alt="Andy" />
+            
+              <p class="site-author-name" itemprop="name">Andy</p>
+              <p class="site-description motion-element" itemprop="description">Everybody wants to be a hero ,but nobody wants to start from zero</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-HTML的头部含义-body标签以上的所有标签算是头部"><span class="nav-number">1.</span> <span class="nav-text">1.HTML的头部含义(body标签以上的所有标签算是头部)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-meta标签"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 meta标签</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#实际上meta标签只有两个属性-分别是http-equiv和name两个属性。"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">实际上meta标签只有两个属性,分别是http-equiv和name两个属性。</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-1-name属性"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1.1 name属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-2-http-equiv属性"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.1.2 http-equiv属性</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-各标签的含义和简单用法-参考顾老师的Semantic-HTML"><span class="nav-number">2.</span> <span class="nav-text">2.各标签的含义和简单用法(参考顾老师的Semantic HTML)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1区块-section"><span class="nav-number">2.1.</span> <span class="nav-text">2.1区块(section)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-1-article元素"><span class="nav-number">2.1.1.</span> <span class="nav-text">2.1.1 article元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-2-section元素"><span class="nav-number">2.1.2.</span> <span class="nav-text">2.1.2 section元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-3-nav元素"><span class="nav-number">2.1.3.</span> <span class="nav-text">2.1.3 nav元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-4-aside元素"><span class="nav-number">2.1.4.</span> <span class="nav-text">2.1.4 aside元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-5-header标签"><span class="nav-number">2.1.5.</span> <span class="nav-text">2.1.5 header标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-6-footer标签"><span class="nav-number">2.1.6.</span> <span class="nav-text">2.1.6 footer标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-7-address标签"><span class="nav-number">2.1.7.</span> <span class="nav-text">2.1.7 address标签</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2分组内容-grouping-content"><span class="nav-number">2.2.</span> <span class="nav-text">2.2分组内容(grouping content)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3文字级语义-text-level-semantics"><span class="nav-number">2.3.</span> <span class="nav-text">2.3文字级语义(text-level semantics)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-4表格数据-tabular-data"><span class="nav-number">2.4.</span> <span class="nav-text">2.4表格数据(tabular data)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-5更改记录-edits"><span class="nav-number">2.5.</span> <span class="nav-text">2.5更改记录(edits)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-6嵌入内容-embedded-content"><span class="nav-number">2.6.</span> <span class="nav-text">2.6嵌入内容(embedded content)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-如何理解语义化"><span class="nav-number">3.</span> <span class="nav-text">3 如何理解语义化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-HTML问题解答"><span class="nav-number">4.</span> <span class="nav-text">4 HTML问题解答</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#剩下章节内容我会快速补充，未完待续…"><span class="nav-number">4.1.</span> <span class="nav-text">剩下章节内容我会快速补充，未完待续…</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Andy</span>
+
+  
+</div>
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
+<script type="text/javascript" src="/js/src/love.js"></script>	
