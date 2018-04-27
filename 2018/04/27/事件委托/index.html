@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="ife," />
+  <meta name="keywords" content="事件委托," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="日期，今天的学习总用时，今天学习的目标是什么，是否达成 哪些东西今天了解得比较透彻，说说自己的理解 哪些东西今天了解到了一些，还有哪些点需要后续继续深入阅读 哪些东西今天学了之后还有很多疑问没有被解答，把问题记录下来，以待后续解决 当然，今天笔记最终的事情是：立Flag，写下大家参加今年前端学院的目标，能不能和我们一起坚持66天！">
-<meta name="keywords" content="ife">
+<meta name="description" content="事件委托概述&amp;emsp;事件委托就是事件代理，它的概念是通过一个事件处理程序，来管理一类的事物。 事件委托的原理及实现&amp;emsp;事件委托基于事件冒泡，它会从父元素的位置上来进行分析，到底是哪个子元素冒泡上来的事件。那么怎么来分析是哪个特定的元素呢？是事件的target属性，举个例子：12345678910111213&amp;lt;ul id=&amp;quot;ul&amp;quot;&amp;gt;    &amp;lt;li i">
+<meta name="keywords" content="事件委托">
 <meta property="og:type" content="article">
-<meta property="og:title" content="规范">
-<meta property="og:url" content="http://yoursite.com/2018/04/25/规范/index.html">
+<meta property="og:title" content="事件委托">
+<meta property="og:url" content="http://yoursite.com/2018/04/27/事件委托/index.html">
 <meta property="og:site_name" content="阿迪弟弟">
-<meta property="og:description" content="日期，今天的学习总用时，今天学习的目标是什么，是否达成 哪些东西今天了解得比较透彻，说说自己的理解 哪些东西今天了解到了一些，还有哪些点需要后续继续深入阅读 哪些东西今天学了之后还有很多疑问没有被解答，把问题记录下来，以待后续解决 当然，今天笔记最终的事情是：立Flag，写下大家参加今年前端学院的目标，能不能和我们一起坚持66天！">
+<meta property="og:description" content="事件委托概述&amp;emsp;事件委托就是事件代理，它的概念是通过一个事件处理程序，来管理一类的事物。 事件委托的原理及实现&amp;emsp;事件委托基于事件冒泡，它会从父元素的位置上来进行分析，到底是哪个子元素冒泡上来的事件。那么怎么来分析是哪个特定的元素呢？是事件的target属性，举个例子：12345678910111213&amp;lt;ul id=&amp;quot;ul&amp;quot;&amp;gt;    &amp;lt;li i">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-26T09:21:09.199Z">
+<meta property="og:updated_time" content="2018-04-27T07:22:50.269Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="规范">
-<meta name="twitter:description" content="日期，今天的学习总用时，今天学习的目标是什么，是否达成 哪些东西今天了解得比较透彻，说说自己的理解 哪些东西今天了解到了一些，还有哪些点需要后续继续深入阅读 哪些东西今天学了之后还有很多疑问没有被解答，把问题记录下来，以待后续解决 当然，今天笔记最终的事情是：立Flag，写下大家参加今年前端学院的目标，能不能和我们一起坚持66天！">
+<meta name="twitter:title" content="事件委托">
+<meta name="twitter:description" content="事件委托概述&amp;emsp;事件委托就是事件代理，它的概念是通过一个事件处理程序，来管理一类的事物。 事件委托的原理及实现&amp;emsp;事件委托基于事件冒泡，它会从父元素的位置上来进行分析，到底是哪个子元素冒泡上来的事件。那么怎么来分析是哪个特定的元素呢？是事件的target属性，举个例子：12345678910111213&amp;lt;ul id=&amp;quot;ul&amp;quot;&amp;gt;    &amp;lt;li i">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/04/25/规范/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/27/事件委托/"/>
 
 
 
 
 
-  <title>规范 | 阿迪弟弟</title>
+  <title>事件委托 | 阿迪弟弟</title>
   
 
 
@@ -253,7 +253,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/25/规范/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/27/事件委托/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Andy">
@@ -270,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">规范</h1>
+          <h1 class="post-title" itemprop="name headline">事件委托</h1>
         
 
         <div class="post-meta">
@@ -282,8 +282,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-25T11:05:29+08:00">
-                2018-04-25
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-27T15:21:41+08:00">
+                2018-04-27
               </time>
             
 
@@ -320,15 +320,12 @@
       
 
       
-        <blockquote>
-<ul>
-<li>日期，今天的学习总用时，今天学习的目标是什么，是否达成</li>
-<li>哪些东西今天了解得比较透彻，说说自己的理解</li>
-<li>哪些东西今天了解到了一些，还有哪些点需要后续继续深入阅读</li>
-<li>哪些东西今天学了之后还有很多疑问没有被解答，把问题记录下来，以待后续解决</li>
-<li>当然，今天笔记最终的事情是：立Flag，写下大家参加今年前端学院的目标，能不能和我们一起坚持66天！</li>
-</ul>
-</blockquote>
+        <h1 id="事件委托"><a href="#事件委托" class="headerlink" title="事件委托"></a>事件委托</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>&emsp;事件委托就是事件代理，它的概念是通过一个事件处理程序，来管理一类的事物。</p>
+<h2 id="事件委托的原理及实现"><a href="#事件委托的原理及实现" class="headerlink" title="事件委托的原理及实现"></a>事件委托的原理及实现</h2><p>&emsp;事件委托基于事件冒泡，它会从父元素的位置上来进行分析，到底是哪个子元素冒泡上来的事件。那么怎么来分析是哪个特定的元素呢？是事件的target属性，举个例子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul id=&quot;ul&quot;&gt;</span><br><span class="line">    &lt;li id=&quot;id1&quot;&gt;我是1&lt;/li&gt;</span><br><span class="line">    &lt;li id=&quot;id2&quot;&gt;我是2&lt;/li&gt;</span><br><span class="line">    &lt;li id=&quot;id3&quot;&gt;我是3&lt;/li&gt;</span><br><span class="line">    &lt;li id=&quot;id4&quot;&gt;我是4&lt;/li&gt;</span><br><span class="line">    &lt;li id=&quot;id5&quot;&gt;我是5&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">js:</span><br><span class="line">ul.addEventListener(&apos;click&apos;, (e) =&gt; &#123;</span><br><span class="line">    if (e.target &amp;&amp; e.target.nodeName === &apos;LI&apos;) &#123;</span><br><span class="line">        console.log(e.target.innerHTML);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<p>或者还能通过事件的target分析到是哪个id属性或者class属性冒泡上来的事件，target可以理解为当前的节点，但它并不是一个真实的DOM它具有一定的兼容性，标准浏览器是target,ie浏览器时叫做srcElement：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">ul.addEventListener(&apos;click&apos;, (event) =&gt; &#123;</span><br><span class="line">    var e = event || window.event;//为了兼容ie</span><br><span class="line">    var target = e.target || e.srcElement//为了兼容ie</span><br><span class="line">    if (e.target &amp;&amp; e.target.nodeName === &apos;LI&apos;) &#123;</span><br><span class="line">        if (e.target.id === &apos;id4&apos;) &#123;</span><br><span class="line">            alert(111)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<h2 id="为什么要用事件委托"><a href="#为什么要用事件委托" class="headerlink" title="为什么要用事件委托"></a>为什么要用事件委托</h2><p>&emsp;通过上面的例子，应该不难发现：算上ul和li一共有6个DOM元素(一个ul和5个li)。如果我们用for循环的方式或者单一绑定事件的方式(如果有50个500…个li肯定没人敢这么做)，那么麻烦先不说，至少对DOM的操作就有6次。在JS中，我们每为一个DOM添加事件，就会拉低一些页面的性能，因为我们和DOM节点的交互增多了，如果一个js里面为了绑定事件和DOM节点没完没了的交互，那么引起浏览器的重绘和重排次数也会随之增多必然会降低性能，而运用事件委托，如上面代码，只进行了一次DOM操作，就是<code>ul = document.getElementById(&#39;ul&#39;)</code> 无论父元素下有多少个子节点都是这一次。</p>
+<h2 id="事件委托的灵活性"><a href="#事件委托的灵活性" class="headerlink" title="事件委托的灵活性"></a>事件委托的灵活性</h2><p>$emsp;比如有这么一个需求，现在我们上面的ul上一共有5个li标签，当鼠标停留在标签上的时候，字体颜色会变成红色，离开时就变成黑色。那么问题来了，如果我们通过js给ul添加一个新的li标签还会不会保留这个事件特性。如果用事件代理，作为子元素当然会，如果不用事件代理，就只能再绑定dom元素再绑定事件了，既麻烦还影响性能，代码对比如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<p>这就是事件委托的灵活性，以及为什么推崇事件委托的原因。</p>
 
       
     </div>
@@ -346,7 +343,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/ife/" rel="tag"># ife</a>
+            <a href="/tags/事件委托/" rel="tag"># 事件委托</a>
           
         </div>
       
@@ -359,15 +356,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/04/26/HTML知识点总结/" rel="next" title="HTML知识点总结">
+                <i class="fa fa-chevron-left"></i> HTML知识点总结
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/25/markdown/" rel="prev" title="markdown">
-                markdown <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -419,8 +416,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -475,6 +481,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#事件委托"><span class="nav-number">1.</span> <span class="nav-text">事件委托</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述"><span class="nav-number">1.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事件委托的原理及实现"><span class="nav-number">1.2.</span> <span class="nav-text">事件委托的原理及实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要用事件委托"><span class="nav-number">1.3.</span> <span class="nav-text">为什么要用事件委托</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事件委托的灵活性"><span class="nav-number">1.4.</span> <span class="nav-text">事件委托的灵活性</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
