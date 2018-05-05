@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="事件委托," />
+  <meta name="keywords" content="变量，作用域，内存," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="事件委托概述&amp;emsp;事件委托就是事件代理，它的概念是通过一个事件处理程序，来管理一类的事物。 事件委托的原理及实现&amp;emsp;事件委托基于事件冒泡，它会从父元素的位置上来进行分析，到底是哪个子元素冒泡上来的事件。那么怎么来分析是哪个特定的元素呢？是事件的target属性，举个例子：12345678910111213&amp;lt;ul id=&amp;quot;ul&amp;quot;&amp;gt;    &amp;lt;li i">
-<meta name="keywords" content="事件委托">
+<meta name="description" content="变量、作用域和内存问题 Javascript属于动态弱类型的语言，变量的值和类型可以在脚本的生命周期内改变。所以可以提现出它强大的特性，但同时也存在着很多比较容易出现问题。  1.基本类型和引用类型基本类型(值类型)简单的数据段叫做基本类型，理解为最基本最简单单一的值：  Undefined Null Number String Boolean引用类型保存在内存中的对象，但和其他语言不同的是，Ja">
+<meta name="keywords" content="变量，作用域，内存">
 <meta property="og:type" content="article">
-<meta property="og:title" content="事件委托">
-<meta property="og:url" content="http://yoursite.com/2018/04/27/事件委托/index.html">
+<meta property="og:title" content="变量作用域和内存问题">
+<meta property="og:url" content="http://yoursite.com/2018/05/05/变量作用域和内存问题/index.html">
 <meta property="og:site_name" content="阿迪弟弟">
-<meta property="og:description" content="事件委托概述&amp;emsp;事件委托就是事件代理，它的概念是通过一个事件处理程序，来管理一类的事物。 事件委托的原理及实现&amp;emsp;事件委托基于事件冒泡，它会从父元素的位置上来进行分析，到底是哪个子元素冒泡上来的事件。那么怎么来分析是哪个特定的元素呢？是事件的target属性，举个例子：12345678910111213&amp;lt;ul id=&amp;quot;ul&amp;quot;&amp;gt;    &amp;lt;li i">
+<meta property="og:description" content="变量、作用域和内存问题 Javascript属于动态弱类型的语言，变量的值和类型可以在脚本的生命周期内改变。所以可以提现出它强大的特性，但同时也存在着很多比较容易出现问题。  1.基本类型和引用类型基本类型(值类型)简单的数据段叫做基本类型，理解为最基本最简单单一的值：  Undefined Null Number String Boolean引用类型保存在内存中的对象，但和其他语言不同的是，Ja">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-27T07:22:50.269Z">
+<meta property="og:updated_time" content="2018-05-05T03:14:29.925Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="事件委托">
-<meta name="twitter:description" content="事件委托概述&amp;emsp;事件委托就是事件代理，它的概念是通过一个事件处理程序，来管理一类的事物。 事件委托的原理及实现&amp;emsp;事件委托基于事件冒泡，它会从父元素的位置上来进行分析，到底是哪个子元素冒泡上来的事件。那么怎么来分析是哪个特定的元素呢？是事件的target属性，举个例子：12345678910111213&amp;lt;ul id=&amp;quot;ul&amp;quot;&amp;gt;    &amp;lt;li i">
+<meta name="twitter:title" content="变量作用域和内存问题">
+<meta name="twitter:description" content="变量、作用域和内存问题 Javascript属于动态弱类型的语言，变量的值和类型可以在脚本的生命周期内改变。所以可以提现出它强大的特性，但同时也存在着很多比较容易出现问题。  1.基本类型和引用类型基本类型(值类型)简单的数据段叫做基本类型，理解为最基本最简单单一的值：  Undefined Null Number String Boolean引用类型保存在内存中的对象，但和其他语言不同的是，Ja">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/04/27/事件委托/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/05/变量作用域和内存问题/"/>
 
 
 
 
 
-  <title>事件委托 | 阿迪弟弟</title>
+  <title>变量作用域和内存问题 | 阿迪弟弟</title>
   
 
 
@@ -253,7 +253,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/27/事件委托/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/05/变量作用域和内存问题/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Andy">
@@ -270,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">事件委托</h1>
+          <h1 class="post-title" itemprop="name headline">变量作用域和内存问题</h1>
         
 
         <div class="post-meta">
@@ -282,8 +282,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-27T15:21:41+08:00">
-                2018-04-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-05T11:13:09+08:00">
+                2018-05-05
               </time>
             
 
@@ -320,12 +320,21 @@
       
 
       
-        <h1 id="事件委托"><a href="#事件委托" class="headerlink" title="事件委托"></a>事件委托</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>&emsp;事件委托就是事件代理，它的概念是通过一个事件处理程序，来管理一类的事物。</p>
-<h2 id="事件委托的原理及实现"><a href="#事件委托的原理及实现" class="headerlink" title="事件委托的原理及实现"></a>事件委托的原理及实现</h2><p>&emsp;事件委托基于事件冒泡，它会从父元素的位置上来进行分析，到底是哪个子元素冒泡上来的事件。那么怎么来分析是哪个特定的元素呢？是事件的target属性，举个例子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul id=&quot;ul&quot;&gt;</span><br><span class="line">    &lt;li id=&quot;id1&quot;&gt;我是1&lt;/li&gt;</span><br><span class="line">    &lt;li id=&quot;id2&quot;&gt;我是2&lt;/li&gt;</span><br><span class="line">    &lt;li id=&quot;id3&quot;&gt;我是3&lt;/li&gt;</span><br><span class="line">    &lt;li id=&quot;id4&quot;&gt;我是4&lt;/li&gt;</span><br><span class="line">    &lt;li id=&quot;id5&quot;&gt;我是5&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">js:</span><br><span class="line">ul.addEventListener(&apos;click&apos;, (e) =&gt; &#123;</span><br><span class="line">    if (e.target &amp;&amp; e.target.nodeName === &apos;LI&apos;) &#123;</span><br><span class="line">        console.log(e.target.innerHTML);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
-<p>或者还能通过事件的target分析到是哪个id属性或者class属性冒泡上来的事件，target可以理解为当前的节点，但它并不是一个真实的DOM它具有一定的兼容性，标准浏览器是target,ie浏览器时叫做srcElement：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">ul.addEventListener(&apos;click&apos;, (event) =&gt; &#123;</span><br><span class="line">    var e = event || window.event;//为了兼容ie</span><br><span class="line">    var target = e.target || e.srcElement//为了兼容ie</span><br><span class="line">    if (e.target &amp;&amp; e.target.nodeName === &apos;LI&apos;) &#123;</span><br><span class="line">        if (e.target.id === &apos;id4&apos;) &#123;</span><br><span class="line">            alert(111)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
-<h2 id="为什么要用事件委托"><a href="#为什么要用事件委托" class="headerlink" title="为什么要用事件委托"></a>为什么要用事件委托</h2><p>&emsp;通过上面的例子，应该不难发现：算上ul和li一共有6个DOM元素(一个ul和5个li)。如果我们用for循环的方式或者单一绑定事件的方式(如果有50个500…个li肯定没人敢这么做)，那么麻烦先不说，至少对DOM的操作就有6次。在JS中，我们每为一个DOM添加事件，就会拉低一些页面的性能，因为我们和DOM节点的交互增多了，如果一个js里面为了绑定事件和DOM节点没完没了的交互，那么引起浏览器的重绘和重排次数也会随之增多必然会降低性能，而运用事件委托，如上面代码，只进行了一次DOM操作，就是<code>ul = document.getElementById(&#39;ul&#39;)</code> 无论父元素下有多少个子节点都是这一次。</p>
-<h2 id="事件委托的灵活性"><a href="#事件委托的灵活性" class="headerlink" title="事件委托的灵活性"></a>事件委托的灵活性</h2><p>$emsp;比如有这么一个需求，现在我们上面的ul上一共有5个li标签，当鼠标停留在标签上的时候，字体颜色会变成红色，离开时就变成黑色。那么问题来了，如果我们通过js给ul添加一个新的li标签还会不会保留这个事件特性。如果用事件代理，作为子元素当然会，如果不用事件代理，就只能再绑定dom元素再绑定事件了，既麻烦还影响性能，代码对比如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
-<p>这就是事件委托的灵活性，以及为什么推崇事件委托的原因。</p>
+        <h1 id="变量、作用域和内存问题"><a href="#变量、作用域和内存问题" class="headerlink" title="变量、作用域和内存问题"></a>变量、作用域和内存问题</h1><blockquote>
+<p>Javascript属于动态弱类型的语言，变量的值和类型可以在脚本的生命周期内改变。所以可以提现出它强大的特性，但同时也存在着很多比较容易出现问题。</p>
+</blockquote>
+<h2 id="1-基本类型和引用类型"><a href="#1-基本类型和引用类型" class="headerlink" title="1.基本类型和引用类型"></a>1.基本类型和引用类型</h2><h3 id="基本类型-值类型"><a href="#基本类型-值类型" class="headerlink" title="基本类型(值类型)"></a>基本类型(值类型)</h3><p>简单的数据段叫做基本类型，理解为最基本最简单单一的值：</p>
+<ul>
+<li>Undefined</li>
+<li>Null</li>
+<li>Number</li>
+<li>String</li>
+<li>Boolean<h3 id="引用类型"><a href="#引用类型" class="headerlink" title="引用类型"></a>引用类型</h3>保存在内存中的对象，但和其他语言不同的是，JavaScript不允许直接访问内存中的位置，也就是<strong>不能操作对象的内存空间（这句话有瑕疵）</strong>，所以它操作的是对象的引用，而不是实际对象，因此叫做引用类型。我们可以为引用类型添加属性，而添加属性的这一过程也可以说是操作了实际的对象，所以定义并不是太严格,一下代码也说明了，两个<strong>变量（不要把obj1和obj2当成对象，他们仅仅是变量名，只是指向某一对象，不然有很多问题都会比较难理解）</strong>引用的都是同一个对象。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">let obj1 = &#123;</span><br><span class="line">        name: &apos;andy&apos;,</span><br><span class="line">        age: 15,</span><br><span class="line">        sex: &quot;man&quot;</span><br><span class="line">    &#125;</span><br><span class="line">    let obj2 = obj1;</span><br><span class="line">    delete obj1.age;</span><br><span class="line">    console.log(obj2) //&#123; name: &apos;andy&apos;,sex: &quot;man&quot;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="2-函数中传递参数"><a href="#2-函数中传递参数" class="headerlink" title="2.函数中传递参数"></a>2.函数中传递参数</h2><p><code>function f(a,b){...}</code>中凡是将变量传递给f中的a,b的，无论是值类型还是引用类型，<strong>全都是值传递的规则</strong><br>在高程书中此段的程序：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">function setName(obj) &#123;</span><br><span class="line">        obj.name = &apos;andy&apos;;</span><br><span class="line">        //这个空对象由于在函数中重写了，所以这个变量引用的是一个局部变量。在局部域中执行完毕也会被销毁,如果是引用类型传递的话外部的person也会被销毁。</span><br><span class="line">        obj = new Object();</span><br><span class="line">        obj.name = &apos;danny&apos;</span><br><span class="line">    &#125;</span><br><span class="line">    var person = &#123; name: &apos;cc&apos;, age: 18 &#125;</span><br><span class="line">    setName(person)</span><br><span class="line">    console.log(person.name)</span><br></pre></td></tr></table></figure></p>
+<h2 id="3-类型检测"><a href="#3-类型检测" class="headerlink" title="3.类型检测"></a>3.类型检测</h2><p>很简单的一句话概括，基本类型用typeof，引用类型用instanceof。需要注意的是null会被typeof成object，基本类型用instanceof全是false。</p>
+<h2 id="4-执行环境和作用域"><a href="#4-执行环境和作用域" class="headerlink" title="4.执行环境和作用域"></a>4.执行环境和作用域</h2><p>&emsp;我们可以把执行环境理解为一个大的环境域。一个函数作用域是一个执行环境，整个window对象，也是浏览器的全局执行环境，每个执行环境里都有一个<strong>变量对象</strong>：变量对象里装着环境中定义的变量和函数。但是变量对象是不能访问的。<br>&emsp;当执行流进入到一个函数的执行环境中，这个环境会被推入一个环境栈中，执行完再出栈，把控制权交给之前的执行环境，这样就形成了<strong>作用域链</strong>,<strong>作用域链</strong>在在执行环境中执行时创建。还有一点切记，执行流在一个执行环境中执行完毕，该环境将会被销毁，里面的变量和函数也会销毁。全局执行环境只有关闭了浏览器才会销毁</p>
 
       
     </div>
@@ -343,7 +352,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/事件委托/" rel="tag"># 事件委托</a>
+            <a href="/tags/变量，作用域，内存/" rel="tag"># 变量，作用域，内存</a>
           
         </div>
       
@@ -356,8 +365,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/26/HTML知识点总结/" rel="next" title="HTML知识点总结">
-                <i class="fa fa-chevron-left"></i> HTML知识点总结
+              <a href="/2018/04/27/事件委托/" rel="next" title="事件委托">
+                <i class="fa fa-chevron-left"></i> 事件委托
               </a>
             
           </div>
@@ -365,10 +374,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/05/变量作用域和内存问题/" rel="prev" title="变量作用域和内存问题">
-                变量作用域和内存问题 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -495,7 +500,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#事件委托"><span class="nav-number">1.</span> <span class="nav-text">事件委托</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述"><span class="nav-number">1.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事件委托的原理及实现"><span class="nav-number">1.2.</span> <span class="nav-text">事件委托的原理及实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要用事件委托"><span class="nav-number">1.3.</span> <span class="nav-text">为什么要用事件委托</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事件委托的灵活性"><span class="nav-number">1.4.</span> <span class="nav-text">事件委托的灵活性</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#变量、作用域和内存问题"><span class="nav-number">1.</span> <span class="nav-text">变量、作用域和内存问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-基本类型和引用类型"><span class="nav-number">1.1.</span> <span class="nav-text">1.基本类型和引用类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本类型-值类型"><span class="nav-number">1.1.1.</span> <span class="nav-text">基本类型(值类型)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引用类型"><span class="nav-number">1.1.2.</span> <span class="nav-text">引用类型</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-函数中传递参数"><span class="nav-number">1.2.</span> <span class="nav-text">2.函数中传递参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-类型检测"><span class="nav-number">1.3.</span> <span class="nav-text">3.类型检测</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-执行环境和作用域"><span class="nav-number">1.4.</span> <span class="nav-text">4.执行环境和作用域</span></a></li></ol></li></ol></div>
             
 
           </div>
